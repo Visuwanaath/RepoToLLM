@@ -231,12 +231,12 @@ const GitHubApiFetcher = ({ onFetchComplete }) => {
                     <Title>File Selector Tree</Title>
                     {repoData && <Text>Click on the Green to Expand a Directory</Text>}
                     {repoData && <>
-                    <ScrollArea mah={500}>
+                    <ScrollArea h={300}>
                     <Box maw={700}>
                         <Tree data={displayTreeData} levelOffset={23} expandOnClick={true} renderNode={renderTreeNode} tree={treeRef} />
                         </Box>
                     </ScrollArea>
-                        <Button onClick={handleGetFiles}> Fetch and add These Files as Context</Button>
+                    <Button onClick={handleGetFiles}> Fetch and add These Files as Context</Button>
                     </>
                     }
                 </Card>
